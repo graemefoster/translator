@@ -1,0 +1,26 @@
+{
+    "name": "GPTTranslator",
+    "description": "",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_title": "GPTTranslator 0.0.1"
+    },
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://localhost/*",
+                "https://*/*"
+            ],
+            "js": [
+                "bundle.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhcGoCJ45XFuPwi03JzukwThmMlrp1ABfY7Ibpme0Q9nyPw91UDOWiarBY1surrACOSvPGiIrP9SHAkL6FOEFLuMgQaSpo4YKtL4IlRaAznkl7F1VfukbsVmNHl3RRXur4lip/HJPSyuWojmcq8DK+liwi5u400iBUdF1TC4XQlea3Z5t304z2lvz8ylbVZkPDa6IqdYk985woqSNGlIoVYQMzgj8sIvATrAW805hkDU4/t/pU3pJQo421scigWdjm3PgTtkufQC/3Tao34POeJAzd0nSTdT7YdSO/CnP2f7lRU4PJlJxUrGuk+6ArNs0GW1MD+MFc5l63bstl7YQeQIDAQAB"
+}
